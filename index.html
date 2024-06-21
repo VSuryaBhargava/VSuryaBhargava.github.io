@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimal-ui"
+    />
+
+    <title>V Surya Bhargava - Resume</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css"
+    />
+
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Lato:300, 400, 700);
+      body {
+        background: #fff;
+        font-family: Lato, sans-serif;
+        font-weight: 300;
+        color: #333;
+        margin: 0 0 80px;
+        font-size: 15px;
+      }
+      a {
+        color: #e32b46;
+      }
+      a:focus,
+      a:hover {
+        color: #333;
+        text-decoration: none;
+      }
+      strong {
+        font-size: smaller;
+        font-weight: 400;
+        color: #333;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+      p {
+        line-height: 1.5;
+        margin: 0 0 0.5em 0;
+      }
+      p + p {
+        margin-top: 10px;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin-top: 0;
+        font-weight: 300;
+        color: #555;
+      }
+      section {
+        margin-top: 15px;
+      }
+      ul,
+      ol {
+        padding-left: 21px;
+      }
+      li {
+        line-height: 1.8;
+        list-style: none;
+      }
+      li:before {
+        content: "\f052";
+        float: left;
+        font: 16px Octicons;
+        margin-top: 6px;
+        margin-left: -20px;
+        opacity: 0.1;
+        position: absolute;
+      }
+      blockquote {
+        border-left: 5px solid #e7e9ec;
+        font-size: 14px;
+      }
+      em {
+        color: #666;
+        font-weight: 300;
+        font-style: normal;
+      }
+      h4 span:first-child {
+        color: #333;
+        font-weight: 400;
+      }
+      .container {
+        max-width: 750px;
+        padding: 0 30px;
+      }
+      .col-sm-6 {
+        margin-bottom: 10px;
+      }
+      .col-sm-12 h4 {
+        margin-top: 12px;
+      }
+      .col-sm-12 + .col-sm-12 {
+        margin-top: 30px;
+      }
+      #header {
+        padding: 50px 0 25px;
+        margin-top: 1cm;
+        /*margin-bottom: 25px;*/
+      }
+      #header h2 {
+        color: #95a5a6;
+        font-size: 24px;
+      }
+      #content h3 {
+        color: #555;
+        font-size: 26px;
+        margin-top: -4px;
+      }
+      #content aside {
+        text-align: right;
+        padding-right: 30px;
+      }
+      #profiles .network {
+        text-transform: capitalize;
+      }
+      #work .position,
+      #volunteer .position {
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+      #education .area {
+        font-weight: 400;
+      }
+      #education .area:before {
+        content: "\f0d7";
+        font: 16px Octicons;
+        margin-right: 6px;
+      }
+      #education .studyType {
+        margin-left: 25px;
+      }
+      #awards .summary,
+      #publications .summary {
+        margin-top: 8px;
+      }
+      #publications .website a:before {
+        content: attr(href);
+      }
+
+      @media (min-width: 480px) {
+        .strike-through {
+          border-top: 1px solid #f4f6f6;
+          height: 20px;
+          margin-top: 12px;
+          margin-bottom: -2px;
+          position: relative;
+        }
+        .strike-through span,
+        .strike-through a {
+          background: #fff;
+          position: absolute;
+        }
+        .strike-through span:first-child {
+          padding-right: 20px;
+          margin-top: -12px;
+        }
+        .strike-through span + span {
+          font-size: 14px;
+          margin-top: -10px;
+          padding-left: 20px;
+          right: 0;
+        }
+      }
+      @media (max-width: 768px) {
+        .col-sm-6:last-child {
+          margin-bottom: 0px;
+        }
+        #content aside {
+          margin-bottom: 20px;
+          padding-right: 0;
+          text-align: left;
+        }
+        #publications .website a:before {
+          content: "View publication";
+        }
+      }
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 28px;
+        }
+        #header h2 {
+          font-size: 24px;
+        }
+        #content h3 {
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 16px;
+        }
+        .date {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+        .strike-through span:first-child {
+          margin-bottom: 7px;
+        }
+        .strike-through span {
+          display: block;
+        }
+        #header {
+          /*margin-bottom: 10px;*/
+          padding: 30px 0 0;
+        }
+        #actions {
+          display: none;
+        }
+      }
+
+      @media print {
+        body {
+          font-size: 12px;
+        }
+        a[href]:after {
+          display: none;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        #header h2 {
+          font-size: 18px;
+          margin-top: -8px;
+        }
+        h4 {
+          font-size: 13px;
+        }
+        #header {
+          padding: 0;
+        }
+
+        #content aside {
+          margin: 0 !important;
+        }
+
+        #content h3 {
+          font-size: 16px;
+          margin-top: 0;
+        }
+
+        blockquote {
+          border: 0;
+          border-left: 3px solid #e7e9ec;
+          font-size: 12px;
+        }
+
+        li:before {
+          font: 10px Octicons;
+        }
+
+        .strike-through {
+          border-top-color: transparent;
+        }
+        .strike-through span + span {
+          font-size: 12px;
+        }
+        .col-sm-push-3 {
+          left: 25%;
+        }
+        .col-sm-1,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12 {
+          float: left;
+        }
+        .col-sm-12 {
+          width: 100%;
+        }
+        .col-sm-11 {
+          width: 91.66666666666666%;
+        }
+        .col-sm-10 {
+          width: 83.33333333333334%;
+        }
+        .col-sm-9 {
+          width: 75%;
+        }
+        .col-sm-8 {
+          width: 66.66666666666666%;
+        }
+        .col-sm-7 {
+          width: 58.333333333333336%;
+        }
+        .col-sm-6 {
+          width: 50%;
+        }
+        .col-sm-5 {
+          width: 41.66666666666667%;
+        }
+        .col-sm-4 {
+          width: 33.33333333333333%;
+        }
+        .col-sm-3 {
+          width: 25%;
+        }
+        .col-sm-2 {
+          width: 16.666666666666664%;
+        }
+        .col-sm-1 {
+          width: 8.333333333333332%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 col-sm-push-3">
+            <h1>
+              V Surya Bhargava
+            </h1>
+            <h2>
+              UI Developer
+            </h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="content" class="container">
+      <section id="work" class="row">
+      
+        <aside class="col-sm-3">
+          <h3>Work</h3>
+        </aside>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-12">
+              <h4 class="strike-through">
+                <span>Relicx</span>
+                <span class="date">
+                  March 2021 - Present
+                </span>
+              </h4>
+              <div class="website pull-right">
+                <a href="https://www.relicx.ai/">https://www.relicx.ai/</a>
+              </div>
+              <div class="position">
+                Software engineer
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p>
+                    <strong class="uppercase">Tech Stack</strong>
+                  </p>
+                </div>
+
+                <div class="col-sm-9">
+                  <p>
+                    React, Redux, Typescript, Jest, Emotion js
+                  </p>
+                </div>
+              </div>
+              <p>
+                <strong class="uppercase">Responsibilities</strong>
+              </p>
+              <ul class="highlights">
+                <li class="bullet">
+                  Led the UI team, ensuring deadlines were met and code quality standards were maintained.
+                </li>
+                <li class="bullet">
+                  Developed test editing, enabling users to create and modify tests interactively within an iframe.
+                </li>
+                <li class="bullet">
+                  Developed test run comparison, enabling users to compare the results of the current test run with the previous one.
+                </li>
+                <li class="bullet">
+                  Analyzed and resolved UI performance issues, reducing CPU usage on the test listing page by 75% and on the test editing page by 60%, along with an 80% reduction in memory usage on the test editing page.
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-sm-12">
+              <h4 class="strike-through">
+                <span>VMware</span>
+                <span class="date">
+                  September 2020 - March 2021
+                </span>
+              </h4>
+              <div class="website pull-right">
+                <a href="https://www.vmware.com/in/products/nsx.html">What is VMware NSX</a>
+              </div>
+              <div class="position">
+                Senior Member of Technical Staff
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p>
+                    <strong class="uppercase">Tech Stack</strong>
+                  </p>
+                </div>
+
+                <div class="col-sm-9">
+                  <p>
+                    Angular 10, Redux, Typescript, SCSS
+                  </p>
+                </div>
+              </div>
+              
+              <p>
+                <strong class="uppercase">Responsibilities</strong>
+              </p>
+              <ul class="highlights">
+                <li class="bullet">
+                  Part of the team responsible for the development and maintenance of the UI for the groups module in NSX, used in multiple places to help customers set configurations for various objects.
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12">
+              <h4 class="strike-through">
+                <span>Rubrik</span>
+                <span class="date">
+                  December 2018 - September 2020
+                </span>
+              </h4>
+              <div class="website pull-right">
+                <a href="https://www.rubrik.com/en">https://www.rubrik.com/</a>
+              </div>
+              <div class="position">
+                Member of Technical Staff
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p>
+                    <strong class="uppercase">Tech Stack</strong>
+                  </p>
+                </div>
+
+                <div class="col-sm-9">
+                  <p>
+                    React, Redux, Typescript, Jest, Emotion js,
+                    Apollo GraphQL
+                  </p>
+                </div>
+              </div>
+              
+              <p>
+                <strong class="uppercase">Responsibilities</strong>
+              </p>
+              <ul class="highlights">
+                <li class="bullet">
+                  Developed UI for managing cloud inventory (AWS, Azure)
+                </li>
+                <li class="bullet">
+                  Developed UI components which enable users to recover database to a particular point in time when.
+                </li>
+                <li class="bullet">
+                  Implemented hooks which enable devs to use URL params to store state instead of redux. This enables usrs to not lose context of their filters when they refresh or use browser navigation.
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-12">
+              <h4 class="strike-through">
+                <span>Swiggy</span>
+                <span class="date">
+                  March 2017 — November 2018
+                </span>
+              </h4>
+              <div class="website pull-right">
+                <a href="https://www.swiggy.com">https://www.swiggy.com</a>
+              </div>
+              <div class="position">
+                UI-Engineer 2
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p>
+                    <strong class="uppercase">Tech Stack</strong>
+                  </p>
+                </div>
+
+                <div class="col-sm-9">
+                  <p>
+                    React, Redux, Javascript, SCSS,
+                    NodeJS, express
+                  </p>
+                </div>
+              </div>
+              
+              <p>
+                <strong class="uppercase">Responsibilities</strong>
+              </p>
+              <ul class="highlights">
+                <li class="bullet">
+                  Was part of the team which revamped Swiggy's desktop and mobile websites.
+                </li>
+                <li class="bullet">
+                  Was responsible for the development and maintenance of Restaurant Menu page on both the platforms.
+                </li>
+                <li class="bullet">
+                  Developed the "Swiggy POP" feature on the desktop website and the coupons page on the mobile website.
+                </li>
+                <li class="bullet">
+                  Developed a sitemap generator in NodeJS for improving Swiggy's seo presence.
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="col-sm-12">
+              <h4 class="strike-through">
+                <span>Zecorate</span>
+                <span class="date">
+                  March 2016 — February 2017
+                </span>
+              </h4>
+              <div class="website pull-right">
+                <a href="http://www.zecorate.com">http://www.zecorate.com</a>
+              </div>
+              <div class="position">
+                &nbsp;
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p>
+                    <strong class="uppercase">Tech Stack</strong>
+                  </p>
+                </div>
+
+                <div class="col-sm-9">
+                  <p>
+                    React, Redux, Javascript, SCSS,
+                    NodeJS, express, MongoDB, mongoose
+                  </p>
+                </div>
+              </div>
+              
+              <p>
+                <strong class="uppercase">Responsibilities</strong>
+              </p>
+              <ul class="highlights">
+                <li class="bullet">
+                  Responsible for the development and maintenance of the
+                  website (full stack).
+                </li>
+                <li class="bullet">
+                  Created scripts which<br />
+                  <ul>
+                  <li>Covert designs made in Photoshop to a format which can be consumed by the website.</li>
+                  <li>Patch several images into a single stereoscopic 3d VR image.</li>
+                </ul>
+                </li>
+                <li class="bullet">
+                  Developed an offline first virtual reality app using react native and realm.
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="col-sm-12">
+              <h4 class="strike-through">
+                <span>Justdial</span>
+                <span class="date">
+                  June 2012 — March 2016
+                </span>
+              </h4>
+              <div class="website pull-right">
+                <a href="https://t.justdial.com/">https://t.justdial.com/</a>
+              </div>
+              <div class="position">
+                Team Lead
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p>
+                    <strong class="uppercase">Tech Stack</strong>
+                  </p>
+                </div>
+
+                <div class="col-sm-9">
+                  <p>
+                    Javascript, CSS, HTML
+                  </p>
+                </div>
+              </div>
+              
+              <p>
+                <strong class="uppercase">Responsibilities</strong>
+              </p>
+              <ul class="highlights">
+                <li class="bullet">
+                  Responsible for the development and maintenance of the mobile
+                  website of Justdial.
+                </li>
+                <li class="bullet">
+                  Took initiative and updated the UI of Doctors' module for the mobile platform. The number of appointments booked through the
+                  platform increased by 80% after the revamp.
+                </li>
+                <li class="bullet">
+                  Developed RESTful APIs for the Friends' module using NodeJS,
+                  neo4j and cypher queries.
+                </li>
+                <li class="bullet">
+                  Developed a server plugin for Neo4j in java which reads data
+                  from MySQL and updates the relationships and nodes in Neo4j
+                  and vice versa to keep both the databases synchronized in
+                  real-time. The plugin increased the speed of synchronization
+                  by 70%.
+                </li>
+              </ul>
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="row">
+        <aside class="col-sm-3">
+          <h3>Skills</h3>
+        </aside>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="name">
+                <h4>Client-side Development</h4>
+              </div>
+              <ul class="keywords">
+                <li>HTML, CSS</li>
+                <li>Javascript, Typescript</li>
+                <li>React, Redux</li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <div class="name">
+                <h4>Server-side Development</h4>
+              </div>
+              <ul class="keywords">
+                <li>Node.js, Express</li>
+                <li>MongoDB, Neo4j</li>
+                <li>PHP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="row">
+        <aside class="col-sm-3">
+          <h3>Education</h3>
+        </aside>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-12">
+              <h4 class="strike-through">
+                <span>Indian Institute of Technology Kharagpur</span>
+                <span class="date">
+                  July 2007 — May 2012
+                </span>
+              </h4>
+              <div class="area">
+                Bachelor of Architecture | CGPA 7.16 / 10
+              </div>
+              <div class="studyType"></div>
+            </div>
+            <div class="col-sm-12">
+              <h4 class="strike-through">
+                <span>Sri Chaitanya Jr. College</span>
+                <span class="date">
+                  April 2005 — March 2007
+                </span>
+              </h4>
+              <div class="area">
+                Intermediate IPE | 85%
+              </div>
+              <div class="studyType"></div>
+            </div>
+            <div class="col-sm-12">
+              <h4 class="strike-through">
+                <span>VVHS, Hyderabad</span>
+                <span class="date">
+                  August 2001 — March 2005
+                </span>
+              </h4>
+              <div class="area">
+                SSE | 69%
+              </div>
+              <div class="studyType"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
